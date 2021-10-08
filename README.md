@@ -92,6 +92,9 @@ If you encounter an issue with the template, we encourage you to open an issue i
 
 ### FAQ
 
+## What is Component-Driven Development
+Component-Driven Development allows you to gradually expand complexity as you move up the component hierarchy. Among the benefits are a more focused development process and increased coverage of all possible UI permutations. In short, CDD helps you build higher-quality and more complex user interfaces.
+
 ## What is a story defined?
 To define our stories, we export a function for each of our test states to generate a story. The story is a function that returns a rendered element (i.e. a component with a set of props) in a given state---exactly like a Functional Component.
 
