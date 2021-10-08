@@ -88,3 +88,22 @@ If you encounter an issue with the template, we encourage you to open an issue i
 1. Read our introductory tutorial at [Learn Storybook](https://storybook.js.org/tutorials/intro-to-storybook/react/en/get-started/).
 2. Learn how to transform your component libraries into design systems in our [Design Systems for Developers](https://storybook.js.org/tutorials/design-systems-for-developers/) tutorial.
 2. See our official documentation at [Storybook](https://storybook.js.org/).
+
+
+### FAQ
+
+## What is a story defined?
+To define our stories, we export a function for each of our test states to generate a story. The story is a function that returns a rendered element (i.e. a component with a set of props) in a given state---exactly like a Functional Component.
+
+## Convenient variable 'Template'
+We use Template to reduce the amount of code written. Template.
+`Template.bind({}) is a standard JavaScript technique for making a copy of a function. We use this technique to allow each exported story to set its own properties, but use the same implementation.`
+
+## What are actions
+ Actions help you verify interactions when building UI components in isolation. Oftentimes you won't have access to the functions and state you have in context of the app. Use action() to stub them in.
+## What do actions do?
+actions allows us to create callbacks that appear in the actions panel of the Storybook UI when clicked. So when we build a pin button, we’ll be able to determine in the test UI if a button click is successful.
+
+## What are parameters?
+parameters are typically used to control the behavior of Storybook's features and addons. In our case we're going to use them to configure how the actions (mocked callbacks) are handled.
+
