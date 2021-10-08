@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Starter template to get up and running quickly with React and Storybook",
   "author": "Chromatic <https://chromatic.com/>",
+  "hompeage": "https://github.com/withchristopher/storybook-library-one",
   "repository": {
     "type": "git",
     "url": "https://github.com/chromaui/intro-storybook-react-template"
@@ -29,7 +30,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "predeploy": "npm run build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static",
+    "build-storybook": "build-storybook"
+
   },
   "eslintConfig": {
     "extends": [
@@ -68,6 +72,7 @@
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.3.0",
     "@storybook/testing-react": "^0.0.17",
+    "gh-pages": "^3.2.3",
     "react-test-renderer": "^17.0.2"
   }
 }
