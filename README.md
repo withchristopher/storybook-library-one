@@ -110,3 +110,35 @@ actions allows us to create callbacks that appear in the actions panel of the St
 ## What are parameters?
 parameters are typically used to control the behavior of Storybook's features and addons. In our case we're going to use them to configure how the actions (mocked callbacks) are handled.
 
+
+## Tutorial 2 - Building a Design system for production
+
+## What is a Design System?
+Design systems contain reusable UI components that help teams build complex, durable, and accessible user interfaces across projects. Since both designers and developers contribute to the UI components, the design system serves as a bridge between disciplines. It is also the “source of truth” for an organization’s common components.
+
+There are three technical parts to a design system that we’ll talk about in this guide:
+
+* 🏗 Common reusable UI components
+* 🎨 Design tokens: Styling-specific variables such as brand colors and spacing
+* 📕 Documentation site: Usage instructions, narrative, do’s and don'ts
+
+## Components for a design system:
+# Build components
+* 📚 Storybook for UI component development and auto-generated docs
+⚛️ React for declarative component-centric UI (via create-react-app)
+* 💅 Styled-components for component-scoped styling
+* ✨ Prettier for automatic code formatting
+# Maintain the system
+* 🚥 GitHub Actions for continuous integration
+* 📐 ESLint for JavaScript linting
+* ✅ Chromatic to catch visual bugs in components (by Storybook maintainers)
+* 🃏 Jest for unit testing components
+* 📦 npm for distributing the library
+* 🛠 Auto for release management workflow
+# Storybook addons
+* ♿ Accessibility to check for accessibility issues during development
+* 💥 Actions to QA click and tap interactions
+* 🎛 Controls to interactively adjust props to experiment with components
+* 📕 Docs for automatic documentation generation from stories
+
+Reference to Storybook's Design system: https://github.com/storybookjs/design-system
